@@ -1,0 +1,40 @@
+# Loompin VoC - Autonomous Agents & Immune System Overview
+
+This document explains the "Autonomous Response" layer of the Loompin platform, specifically focusing on the ActionAgent and the AutonomousActionEngine.
+
+## 🤖 The ActionAgent
+The `ActionAgent` (located in `backend/agents/squads/ActionAgent.js`) is the "Automator" of the platform. While other agents focus on analysis, the ActionAgent determines the best proactive course of action.
+
+### Key Responsibilities:
+- **Drafting Responses**: Automatically creates empathetic email drafts or support ticket content based on customer feedback.
+- **Contextualization**: Uses the `SmartAgent` framework to understand the customer's history and the specific sentiment of the recent interaction.
+- **Strategy Selection**: Decides whether to offer a discount, a proactive apology, or request clarification.
+
+---
+
+## 🛡️ The AutonomousActionEngine (The "Digital Immune System")
+The `AutonomousActionEngine` (located in `backend/services/AutonomousActionEngine.js`) is the execution layer for agent proposals.
+
+### Role:
+- **Safety Checks**: Enforces daily limits on financial actions (like refunds or discounts).
+- **Reflex Execution**: If an account's frustration exceeds a threshold (e.g., > 0.8), it triggers a "Cool Down" protocol immediately.
+- **Proactive Scaling**: Can automatically escalate high-risk customers to the Head of Customer Success.
+
+---
+
+## 🧠 The SmartAgent Framework
+Both the ActionAgent and other "Squad" agents follow a rigorous cognitive architecture defined in `SmartAgent.js`:
+
+1. **Recall**: Pulls similar past interactions from the Vector Store.
+2. **Contextualization**: Normalizes inputs into the "Unified Envelope".
+3. **Hypothesization**: Predicts the best possible outcome/action.
+4. **Investigation**: Verifies the logic against the current feedback.
+5. **Synthesis**: Formulates a final proposal.
+6. **Zero Hallucination Protocol**: Ensures every claim made by the agent is backed by actual data, preventing "AI hallucinations".
+
+---
+
+## 📂 File Summary
+- `backend/agents/SmartAgent.js`: The "DNA" of all intelligent agents.
+- `backend/agents/squads/ActionAgent.js`: The proactive response automator.
+- `backend/services/AutonomousActionEngine.js`: The executor of autonomous reflexes.
