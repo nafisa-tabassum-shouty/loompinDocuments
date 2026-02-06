@@ -11,6 +11,18 @@ yYC4LcBuhTLPvvBxXe6xRC9mbfp0hrw1m8uFcmqfUVGucuzk5l
 Bearer Token
 AAAAAAAAAAAAAAAAAAAAADia7QEAAAAA6FA9mv7glunfvY6Xfc%2Bdnjk9HTA%3Dx1w1aSuNabB4tunGs3RJnPjsWoGn3q9RDvxVtBm98MZrmvRXE5
 
+Client Secret ID
+MkpWdmluMmNVdVQzZldkbGtscWg6MTpjaQ
+Client Secret
+YryJA4DNjlxT2h9ckSzzCicIOW7dkO-yi_2nXBkcXb0XDfdjwH
+
+
+Did you save your OAuth 2.0 Client Secret?
+Save them in a secure location
+Treat them like a password or a set of keys
+If security has been compromised, regenerate them
+DO NOT store them in public places or shared docs
+Your new credentials:
 
 
 ###facebook
