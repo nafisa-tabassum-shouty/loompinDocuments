@@ -78,7 +78,7 @@
 | Plex Smart Manufacturing | syncing status failed and skipped. 0% success rate of syncing. | Universal adapter missing credential for Plex Smart Manufacturing. Please configure API or token. |
 | Opower (Oracle) | Continue with Opower (Oracle) button is not working | Failed to initiate authentication: Missing Client ID for Opower (Oracle) |
 | Yardi Voyager | syncing status failed and skipped. 0% success rate of syncing. | Universal adapter missing credential for Yardi Voyager. Please configure API or token. |
-| Mailchimp | | |
+| Mailchimp | Continue with Mailchimp button is not working | Failed to initiate OAuth: Missing Client ID for Mailchimp|
 | Marketo | Continue with Marketo button is not working | Failed to initiate OAuth: Missing Client ID for marketo|
 | Klaviyo | syncing status failed and skipped. 0% success rate of syncing. | Universal adapter missing credential for Klaviyo. Please configure API or token.|
 | ActiveCampaign | syncing status failed and skipped. 0% success rate of syncing. | Universal adapter missing credential for ActiveCampaign. Please configure API or token.|
